@@ -370,3 +370,148 @@ footer p i { color: #ffbe0b; margin-right: 10px; }
         gap: 30px;
     }
 }
+/* Decorative Page Banner Layout Styles */
+.page-banner {
+    background: url('https://unsplash.com') no-repeat center center/cover;
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    color: #fff;
+}
+.banner-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to right, rgba(13, 44, 84, 0.95), rgba(13, 44, 84, 0.4));
+}
+.banner-text {
+    position: relative;
+    z-index: 5;
+}
+.banner-text h2 { font-size: 32px; font-weight: 700; margin-bottom: 5px; }
+.banner-text p a { color: #ffbe0b; text-decoration: none; }
+
+/* About Page Split Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+.sub-heading {
+    color: #ffbe0b;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+.about-story h3 { font-size: 28px; color: #0d2c54; margin-bottom: 20px; }
+.about-story p { font-size: 15px; color: #555; margin-bottom: 15px; }
+
+/* Mission / Vision Internal Cards Layout */
+.mv-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+.mv-card {
+    background: #f8faf9;
+    padding: 25px;
+    border-radius: 6px;
+    border-top: 3px solid #ffbe0b;
+}
+.mv-card i { font-size: 24px; color: #0d2c54; margin-bottom: 12px; }
+.mv-card h4 { font-size: 16px; color: #0d2c54; margin-bottom: 8px; }
+.mv-card p { font-size: 13px; color: #666; margin-bottom: 0; }
+
+/* Leadership Directory Sidebar Panel Styles */
+.sidebar-directory {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    align-self: start;
+}
+.sidebar-directory h3 { font-size: 18px; color: #0d2c54; margin-bottom: 20px; border-bottom: 2px solid #f4f4f4; padding-bottom: 10px; }
+.leader-tile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+.leader-tile:last-child { border: none; margin: 0; padding: 0; }
+.avatar-box {
+    background: rgba(13, 44, 84, 0.05);
+    color: #0d2c54;
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 18px;
+}
+.leader-tile h5 { font-size: 14px; color: #111; }
+.leader-tile p { font-size: 12px; color: #777; }
+
+/* Secure Campus Student Hub Portal Login Layout */
+.portal-body-bg {
+    background: linear-gradient(135deg, #0d2c54 0%, #061529 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.login-wrapper-box {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    padding: 40px 35px;
+    border-top: 5px solid #ffbe0b;
+}
+.login-branding { text-align: center; margin-bottom: 30px; }
+.brand-icon-circle {
+    background: #0d2c54; color: #ffbe0b;
+    width: 65px; height: 65px; border-radius: 50%;
+    display: inline-flex; justify-content: center; align-items: center;
+    font-size: 28px; margin-bottom: 15px;
+}
+.login-branding h2 { font-size: 22px; color: #0d2c54; font-weight: 700; }
+.login-branding p { font-size: 12px; color: #666; margin-top: 3px; }
+
+.input-field-group { margin-bottom: 20px; }
+.input-field-group label { display: block; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 8px; }
+.input-field-group label i { color: #0d2c54; margin-right: 5px; }
+.input-field-group input {
+    width: 100%; padding: 12px 15px; border: 1px solid #ccc; border-radius: 4px;
+    font-size: 14px; outline: none; transition: border 0.3s;
+}
+.input-field-group input:focus { border-color: #0d2c54; box-shadow: 0 0 5px rgba(13,44,84,0.1); }
+
+.login-utilities { display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 25px; }
+.remember-checkbox { color: #555; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+.forgot-pass-link { color: #0d2c54; text-decoration: none; font-weight: 500; }
+
+.login-submit-btn {
+    width: 100%; background: #0d2c54; color: #fff; border: none; padding: 14px;
+    border-radius: 4px; font-size: 15px; font-weight: 600; cursor: pointer;
+    transition: background 0.2s; display: flex; justify-content: center; align-items: center; gap: 10px;
+}
+.login-submit-btn:hover { background: #071930; }
+
+.login-help-footer { margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; text-align: center; }
+.login-help-footer p { font-size: 11.5px; color: #666; line-height: 1.5; margin-bottom: 15px; }
+.back-home-link { display: inline-block; font-size: 13px; color: #0d2c54; text-decoration: none; font-weight: 500; }
+.back-home-link:hover { text-decoration: underline; }
+
+/* Responsive adjustments for sub-pages */
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .mv-blocks { grid-template-columns: 1fr; }
+}

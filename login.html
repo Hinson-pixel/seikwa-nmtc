@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Login | Seikwa NMTC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="portal-body-bg">
+
+    <div class="login-wrapper-box">
+        <div class="login-branding">
+            <div class="brand-icon-circle"><i class="fa-solid fa-user-nurse"></i></div>
+            <h2>SEIKWA NMTC Portal</h2>
+            <p>Integrated Student Information System (iSIS)</p>
+        </div>
+
+        <!-- Interactive Secure Login Form Panel -->
+        <form class="portal-login-form" onsubmit="event.preventDefault(); alert('Authentication processing mechanism connected successfully!');">
+            <div class="input-field-group">
+                <label for="student_id"><i class="fa-solid fa-id-card"></i> Student Index / Reference Number</label>
+                <input type="text" id="student_id" placeholder="e.g. NMTC/RGN/24/048" required>
+            </div>
+            
+            <div class="input-field-group">
+                <label for="portal_pass"><i class="fa-solid fa-lock"></i> Account Password</label>
+                <input type="password" id="portal_pass" placeholder="12345" required>
+            </div>
+
+            <div class="login-utilities">
+                <label class="remember-checkbox"><input type="checkbox"> Keep me logged in</label>
+                <a href="#" class="forgot-pass-link">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-submit-btn">Secure Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+        </form>
+
+        <div class="login-help-footer">
+            <p><i class="fa-solid fa-circle-info"></i> <strong>Need Help?</strong> For account activation or password recovery issues, visit the ICT Support Helpdesk at the main administration block.</p>
+            <a href="index.html" class="back-home-link">← Return to Public Website</a>
+        </div>
+    </div>
+
+</body>
+</html>
