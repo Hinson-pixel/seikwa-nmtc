@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff & Admin Authentication | Seikwa NMTC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="admin-login-bg">
+
+    <!-- Dark institutional theme login panel -->
+    <div class="admin-login-card">
+        <div class="admin-login-header">
+            <div class="admin-badge-icon"><i class="fa-solid fa-lock-open"></i></div>
+            <h2>NMTC Admin Core</h2>
+            <p>Staff & Institutional Control Gateway</p>
+        </div>
+
+        <!-- Form forwards directly to the admin dashboard upon submission -->
+        <form class="admin-form-panel" onsubmit="event.preventDefault(); window.location.href='admin-dashboard.html';">
+            
+            <div class="input-field-group">
+                <label for="admin_user"><i class="fa-solid fa-user-shield"></i> Staff Username / Email</label>
+                <input type="text" id="admin_user" placeholder="e.g. registrar_office" required>
+            </div>
+            
+            <div class="input-field-group">
+                <label for="admin_pass"><i class="fa-solid fa-key"></i> Clearance Password</label>
+                <input type="password" id="admin_pass" placeholder="••••••••" required>
+            </div>
+
+            <div class="admin-login-options">
+                <label class="remember-checkbox"><input type="checkbox"> Secure Session</label>
+                <a href="#" class="forgot-pass-link text-gold">Reset Token?</a>
+            </div>
+
+            <button type="submit" class="admin-submit-btn">Authorize & Enter <i class="fa-solid fa-shield-halved"></i></button>
+        </form>
+
+        <div class="admin-security-notice">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <strong>Security Alert:</strong> This network terminal is restricted to authorized personnel of Seikwa Nursing and Midwifery Training College. Unauthorized access attempts are monitored and logged.</p>
+            <a href="index.html" class="back-home-gold">← Exit to Main Site</a>
+        </div>
+    </div>
+
+</body>
+</html>
