@@ -273,3 +273,100 @@ footer p i { color: #ffbe0b; margin-right: 10px; }
     padding-top: 20px;
     font-size: 12px;
 }
+/* Announcements & Noticeboard Custom Styling */
+.background-light {
+    background-color: #f4f7f6;
+}
+.news-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-left: 4px solid #ffbe0b; /* Decorative Accent Gold Line */
+    transition: transform 0.3s ease;
+}
+.news-card:hover {
+    transform: translateY(-5px);
+}
+.news-date {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.news-date i {
+    color: #0d2c54;
+    margin-right: 5px;
+}
+.news-card h3 {
+    font-size: 18px;
+    color: #0d2c54;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+.news-card p {
+    font-size: 13.5px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.read-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0d2c54;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.read-more:hover {
+    color: #ffbe0b;
+}
+
+/* Location split section grid setup */
+.location-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.location-info h3 {
+    color: #0d2c54;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.location-info > p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.direction-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.direction-item i {
+    font-size: 24px;
+    color: #ffbe0b;
+    margin-top: 3px;
+}
+.direction-item strong {
+    display: block;
+    color: #0d2c54;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.direction-item p {
+    font-size: 14px;
+    color: #666;
+}
+.map-container {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Mobile fix for the map area layout split */
+@media (max-width: 768px) {
+    .location-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
